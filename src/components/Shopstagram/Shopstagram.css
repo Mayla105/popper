@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.shopstagram-container{
+  width: 100%;
+  height: 125vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shopstagram-titles{
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+  background-color: white;
+}
+
+.shopstagram-titles h1{
+  text-transform: uppercase;
+}
+
+.shopstagram-pictures{
+  width: 90%;
+  background-color: white;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 2rem 0;
+}
+
+.shopstagram-pictures .col1{
+  background-image: url('../../images/cuadrante4.jpg');
+  background-size: cover;
+}
+
+.shopstagram-pictures .col2{
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.primerCuadrante{
+  background-image: url('../../images/cuadrante1.jpg');
+  background-size: cover;
+}
+
+.segundoCuadrante{
+  background-image: url('../../images/cuadrante2.jpg');
+  background-size: cover;
+}
+
+.tercerCuadrante{
+  background-image: url('../../images/cuadrante6.jpg');
+  background-size: cover;
+}
+
+.cuartoCuadrante{
+  background-image: url('../../images/cuadrante7.jpg');
+  background-size: cover;
+}
+
+
+@media screen and (max-width: 1024px){
+
+  .shopstagram-container{
+    height: 250vh;
+  }
+
+  .shopstagram-pictures{
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+  }
+
+}
+
+@media screen and (max-width: 600px){
+
+  .shopstagram-container{
+    height: 350vh;
+  }
+
+  .shopstagram-pictures .col2{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+}
